@@ -1,11 +1,9 @@
 package br.com.engsenai.model;
 
-public class Triângulo {
+public class Triangulo {
 
 	private double base;
 	private double altura;
-	public double area;
-	public double perimetro;
 
 	public void setBase(double base) {
 		this.base = base;
@@ -18,13 +16,8 @@ public class Triângulo {
 	}
 	
 	public double calcularArea() {
-		double area = base * altura;
+		double area = base * altura / 2;
 		return area;
-	}
-
-	public double calcularPerimetro() {
-		double perimetro = base + altura *2;
-		return perimetro;
 	}
 
 	public void mostrarResultados() {
@@ -34,7 +27,6 @@ public class Triângulo {
 		System.out.println("Base: " + base);
 		System.out.println("Altura: " + altura);
 		System.out.println("Área = " + calcularArea());
-		System.out.println("Perímetro = " + calcularPerimetro());
 		System.out.println("===============");
 	}
 }
